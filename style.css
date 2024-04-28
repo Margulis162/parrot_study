@@ -1,0 +1,12 @@
+:root{
+    --black: rgb(0,0,0);
+    --grey: rgb(170,170,170);
+    --lightGrey: rgb(200,200,200);
+    --darkGrey: rgb(50,50,50);
+    --white: rgb(255,255,255);
+}
+
+body{
+    background-color: var(--lightGrey);
+}
+
