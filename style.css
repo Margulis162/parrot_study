@@ -11,13 +11,35 @@ body{
 }
 
 #parrot{
-    
+
     /* size and position */
-    block-size: 100vh;
-    inline-size: 100vw;
+    block-size: 300px;
+    inline-size: 184px;
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
+    border: 1px solid black;
+    
 
-}
+    background:
+        /* tail */
+        linear-gradient(var(--darkGrey), var(--darkGrey)) 
+            42px 180px / 30px 90px,
+        radial-gradient(circle at 0 0, var(--darkGrey) 29px, transparent 30px)
+            42px 270px / 40px 60px,
+        linear-gradient(var(--darkGrey), var(--darkGrey)) 
+            52px 159px / 30px 90px,
+        radial-gradient(circle at 0 center, var(--darkGrey) 29px, transparent 30px)
+            52px 220px / 30px 60px,
+        /* head */
+        radial-gradient(circle at 100% 100%, var(--darkGrey) 69px, transparent 70px)
+            82px 0 / 70px 70px,
+        radial-gradient(circle at 0 100%, var(--black) 39px, transparent 40px)
+            142px 8px / 40px 40px,
+        radial-gradient(circle at 0 center, var(--black) 19px, transparent 20px)
+            152px 27px / 20px 40px;
+        /* branch */
+
+        background-repeat: no-repeat;
+        }
