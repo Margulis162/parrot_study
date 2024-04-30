@@ -44,8 +44,31 @@ body{
         /* branch */
         linear-gradient(var(--black), var(--black)) 
             0 170px / 160px 24px,
-        linear-gradient(60deg, transparent 50%, var(--black) calc(50% + 1px)) 
+        linear-gradient(60deg, transparent 50%, var(--black) 50%) 
             100px 190px/ 40px 25px;
 
         background-repeat: no-repeat;
         }
+    
+    #parrot::before,
+    #parrot::after {
+          content: "";
+          position: absolute;
+          display: block;
+        }
+
+    #parrot::before{
+        top: 65px;
+        left: 42px;
+        width: 110px;
+        height: 130px;
+        border-radius: 50px 0 100px 0;
+        background: radial-gradient(var(--grey) 99px, transparent 100px)
+            -106px -150px / 200px 200px,
+        radial-gradient(var(--darkGrey) 99px, transparent 100px)
+            -118px -116px / 200px 200px,
+        radial-gradient(var(--white) 99px, transparent 100px)
+            -118px -84px / 200px 200px;
+        background-repeat: no-repeat;  
+        background-color:slategray;
+    }
